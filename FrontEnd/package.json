@@ -1,0 +1,38 @@
+{
+  "name": "tarot_readings_frontend",
+  "version": "1.0.0",
+  "description": "Frontend dir for tarot reading app",
+  "main": "main.js",
+  "author": {
+    "name": "Danny Heeley",
+    "email": "dheeley2@gmail.com"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "gsap": "*"
+  },
+  "devDependencies": {
+    "babel-jest": "^29.3.1",
+    "jest": "^27.4.4"
+  },
+  "scripts": {
+    "test": "jest",
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "keywords": [
+    "AI",
+    "tarot",
+    "reading",
+    "app",
+    "OpenAI",
+    "Chat GPT",
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ]
+}

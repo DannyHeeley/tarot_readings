@@ -1,0 +1,31 @@
+{
+  "name": "openai_API_call",
+  "version": "1.0.0",
+  "description": "server side API call to openai using node.js openai library",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir dist",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "api",
+    "call",
+    "openai",
+    "tarot",
+    "reading",
+    "node.js"
+  ],
+  "author": "Danny Heeley",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "openai": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  }
+}

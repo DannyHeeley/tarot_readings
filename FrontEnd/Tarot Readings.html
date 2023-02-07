@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js" integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Tarot Readings</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Want a free tarot reading? Simply choose three tarot cards from the deck and you will receive mystical insight and guidance from the cards.">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="loading.css"/>
+
+  </head> 
+
+  <body>
+    <main>
+      <div class="main-app" id="main-app">
+        <div id="card-spread-container" class="card-spread-container"></div>
+        <div class="reading-img-container">
+          <div class=userInputField>
+            <p class="button-text" style="font-weight: bold;">Age: </p>
+            <input type="text" style="width:50%" id="age">
+            <p class="button-text"style="font-weight: bold;">Gender: </p>
+            <input type="radio" name="gender" class="gender" value="male">
+            <p class="button-text">Male</p>
+            <input type="radio" name="gender" class="gender" value="female">
+            <p class="button-text">Female</p>
+          </div>
+                    <div class="button-container">
+            <button id="shuffle_button">Shuffle</button>
+            <button id="reset_button" class="reset">Reset</button>
+          </div>
+          <div class="selected-cards-container">
+            <div class="selected-card" id="card_1"></div>
+            <div class="selected-card" id="card_2"></div>
+            <div class="selected-card" id="card_3"></div>
+              <div class="cardnamebox">
+                <div class="selected-card-name" id="card_1_name"></div>
+              </div>
+              <div class="cardnamebox">
+                <div class="selected-card-name" id="card_2_name"></div>
+              </div>
+              <div class="cardnamebox">
+                <div class="selected-card-name" id="card_3_name"></div>
+              </div>
+          </div>
+
+          <button id="send-button">Generate Reading</button>
+
+          <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div id="tarot-reading-box" class="tarot-reading-box">
+            <div id="tarot-reading"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="tarotDeck.js"></script>
+  <script src="main.js"></script>
+</html>
